@@ -121,7 +121,7 @@ func (h *Tripshand) CreateTrip(w http.ResponseWriter, r *http.Request) {
 	day, _ := strconv.Atoi(r.FormValue("day"))
 	night, _ := strconv.Atoi(r.FormValue("night"))
 	quota, _ := strconv.Atoi(r.FormValue("quota"))
-	date, _ := time.Parse("2006-01-02", r.FormValue("date_trip"))
+	dateTrip, _ := time.Parse("2006-01-02", r.FormValue("date_trip"))
 	CountryID, _ := strconv.Atoi(r.FormValue("countryID"))
 	request := tripdto.CreateTripRequest{
 		Title:          r.FormValue("tigo get dewetour/handlerstle"),
@@ -135,7 +135,7 @@ func (h *Tripshand) CreateTrip(w http.ResponseWriter, r *http.Request) {
 		Quota:          quota,
 		Description:    r.FormValue("desc"),
 		Image:          resImg.SecureURL,
-		DateTrip:       date,
+		DateTrip:       dateTrip,
 	}
 	// fmt.Println(night)
 
