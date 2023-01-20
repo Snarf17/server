@@ -99,6 +99,7 @@ func (h *Transactionhand) CreateTransaction(w http.ResponseWriter, r *http.Reque
 	}
 
 	transaction := models.Transaction{
+		ID:         TransactionId,
 		CounterQty: request.CounterQty,
 		Total:      request.Total,
 		Status:     request.Status,
