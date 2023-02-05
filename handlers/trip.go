@@ -124,7 +124,7 @@ func (h *Tripshand) CreateTrip(w http.ResponseWriter, r *http.Request) {
 	dateTrip, _ := time.Parse("2006-01-02", r.FormValue("date_trip"))
 	CountryID, _ := strconv.Atoi(r.FormValue("countryID"))
 	request := tripdto.CreateTripRequest{
-		Title:          r.FormValue("tigo get dewetour/handlerstle"),
+		Title:          r.FormValue("title"),
 		CountryID:      CountryID,
 		Accomodation:   r.FormValue("accomodation"),
 		Transportation: r.FormValue("transport"),
