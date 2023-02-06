@@ -280,7 +280,7 @@ func SendMail(status string, transaction models.Transaction) {
 		var CONFIG_SMTP_HOST = "smtp.gmail.com"
 		var CONFIG_SMTP_PORT = 587
 		var CONFIG_SENDER_NAME = "DumbSound <demo.dumbways@gmail.com>"
-		var CONFIG_AUTH_EMAIL = "maykeljordana199@gmail.com"
+		var CONFIG_AUTH_EMAIL = "maykeljordan199@gmail.com"
 		var CONFIG_AUTH_PASSWORD = "xhsjiljtwydfmjeh"
 
 		var tripName = transaction.Trip.Title
